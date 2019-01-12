@@ -1,0 +1,12 @@
+Compte rendu du vendredi 11 janvier :
+
+Aujourdhui nous avons reçu notre carte arduino Due, le summum des cartes arduino. Avant ça nous avons affiché un jeu qui s'apparente à flappy bird sur notre écran avec la carte Mega, qui marchait très bien et rafraîchissant correctement.  Cela nous a permis d'en apprendre plus sur le code servant pour notre écran.
+Nous avons ensuite utilisé ce code sur la carte Due mais nous avons eu quelques problèmes avec notamment la librairie EEPROM qui n est pas sur Due mais est sur Mega. Ils s'agit d'une mémoire "morte", c'est à dire qu'elle sert à  conserver une information même lorsque la carte n'est plus alimentée.
+Enfin, le jeu marchait différemment sur la Due, il fallait modifier des paramètres mais je n'ai pas encore réussi à l'optimiser pour qu'il marche aussi bien que sur Mega.
+On a aussi constaté que le temps de compilation/téléversement sur Due est plus long, ce qui ralentit un peu quand on modifie le programme petit à petit.
+J’ai aussi vérifié que les programmes donnés en exemples dans les librairies comme celle que l’on utilise, UTFT, fonctionne correctement sans bugs.
+Je fournis quelques photos/vidéos de l'avancée. 
+
+https://drive.google.com/open?id=13fza3ShN99rukUX7pDLKAz1ylWGn9w3_
+
+https://drive.google.com/open?id=11PFrfrMBYZYm755K-ugKYDmVygGm77jy
