@@ -1,0 +1,6 @@
+Aujourd'hui, lors de la 4ème séance, j'ai commencé à coder une sorte de Pong, le célèbre jeu vidéo rétro.
+J'ai donc commencé à faire apparaitre une balle carrée, et la faire se déplacer librement sur tout l'écran. On lui donne une déplacement suivant x et suivant y et on le change dès qu'elle touche une paroi de l'écran.
+Ensuite, j ai déssiné les deux raquettes qui servent à renvoyer la balle de part et d'autre de l'écran. il s'agit de deux rectangles, chacun sur un bord latéral de l'écran.
+Enfin, je me suis arrété aux collisions entre la  balle et les raquettes. Il suffit juste de rajouter deux boucles "if" qui vérifient les coordonnées x et y de la balle.
+Celà fonctionne pour le moment sans que les raquettes ne bougent. Je n'ai pas pris de photos/vidéos mais on vous a montré le tout lors de la présentation filmée.
+Pour le mouvement de la balle, j'ai éssayé de rafraichir l'écran à chaque "loop" mais celà n'est pas faisable. La meilleure technique étant donc de déssiner un carré de meme taille que la balle par dessu son ancienne position et de meme couleur que le fond de l'écran.
