@@ -1,0 +1,37 @@
+Lors de cette semaine et notamment lors de la séance du mercredi 6 février, nous avons avancé notre jeu pong en ajoutant le déplacement d'une des raquettes à l'aide de boutons.
+Nous avons du brancher la carte au shield de l'écran à l'aide de cables males/femelles pour pouvoir brancher directement la plaque servant pour les composant(notamment les boutons,
+au 3,3V.
+Au niveau du code, nous avons modifié le programme pour le déplacement de la balle au début, pour qu'elle parte dans une direction aléatoire.
+Nous avons mis 4 directions diagonales: en haut a gauche, en haut a droite, et de meme vers le bas
+//Lancement de la balle 
+balle_speedX = random(0,2); 
+     balle_speedY = random(0,2);
+     if(random(0,2)==1){
+      //balle_speedX = 1;
+      balle_speedY = 1;
+      balle_speedX = 1;
+      
+     }
+     else{
+      balle_speedY = -1;
+      balle_speedX = -1;
+     }
+    
+Dans la librairie UTFT, la fonction random renvoie un nombre aleatoire entre 0 et 1 ici (2-1).
+balle_speedX et balle_speedY correspondent respectivement au déplacement de la balle suivant  les coordonnées x et y de l'écran, en implémentant les positions de la balle en fonction de sa vitesse , ce qui la met en mouvement.
+
+Le programme qui suit est le programme qui nous sert à jouer contre un bot. Pour celà, nous imposons à la raquette du bot de suivre le mouvement de la balle par rapport au centre de sa raquette.
+Ainsi, si la balle est plus basse que le centre de la raquette, cette derniere descendra(car les coordonnées de l'écran commencent en haut à gauche par (0,0))et inversement.
+Le bot étant devenu tres fort meme si diminué par quelques bug, j ai ajouté un random comme condition qui fait que le bot a une chance sur 2 de bouger à chaque loop ce qui fait qu'il suit la balle plus difficilement, meme si cela repose sur de l'aléatoire.
+ //Création du BOT
+  if (balle_posY>raquette2_finY + (raquette2_posY - raquette2_finY) / 2 &&random(0,2)==1) {  // Si la balle est plus basse que le centre
+    raquette2_speed = 2;
+    // Se déplacer vers le bas
+  } 
+  else if (balle_posY < raquette2_finY + (raquette2_posY - raquette2_finY) / 2 &&random(0,2)==1) {  // Si la balle est plus haute que le centre
+    raquette2_speed =-2;
+  }
+  
+  
+  Notre jeu pong est bientot fini, nous allons faire un mode solo et un mode 1 contre 1 à l'aide de nos boutons.
+  Toutefois, quelques problemes sont ingérables comme le clignotement lors du déplacement de certains éléments du jeu, car la méthode de dessin/éffacement des décors est la meilleure solution que l'on ait.
