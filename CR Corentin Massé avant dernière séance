@@ -1,0 +1,9 @@
+Aujourd'hui et aussi cette semaine j'ai avancé le jeu s'apparentant au casse brique.
+Pour celà,  j ai utilisé des tableaux pour remplir l'écran avec des briques, notamment des tableaux a 2 dimensions, 
+pour remplir non seulement des lignes mais des colonnes.
+Pour améliorer le visuel du jeu j'ai remplis les briques avec un dégradé de couleurs( en donnant une couleur dependant de la ligne et de la colonne de la brique)
+Toutefois, quelques problèmes persistent comme le rafraîchissement de l'écran et de la balle, qui ne s'affiche pas très bien sur le jeu.
+Aussi, lors de cette séance, nous avons commencé a nous atteler au design de la borne d arcade que nous allons fabriquer très prochainement, mais aussi a un ecran d'accueil pour les jeux, un minimum stylisé pout un meilleur rendu.
+Nous avons réfléchi aux sons que l on souhaite émettre a l'aide de notre buzzer.
+Nous avons aussi éprouver quelques difficultés pour utiliser nos cartes sd avec la carte et l'écran.
+Enfin, la version 2 joueurs de notre pong se porte bien.
